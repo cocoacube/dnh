@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dr. Next 来思博士 - 荣誉墙</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_style.css,Mcc.Ax2f9rlEoC.css.pagespeed.cf.xewoUhaX15.css" />
+		<link rel="stylesheet" href='css/homepage.css'/>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript">
+			
+
+			$( document ).ready(function() {
+				console.log( "ready!" );
+				// Some random colors
+			const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+			const numBalls = 50;
+			const balls = [];
+
+			for (let i = 0; i < numBalls; i++) {
+			  let ball = document.createElement("div");
+			  ball.classList.add("ball");
+			  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+			  ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
+			  ball.style.top = `${Math.floor(Math.random() * 90)}vh`;
+			  ball.style.transform = `scale(${Math.random()})`;
+			  ball.style.width = `${Math.random()}em`;
+			  ball.style.height = ball.style.width;
+			  
+			  balls.push(ball);
+			  // document.body.append(ball);
+			  $('#dots').append( ball );
+			}
+
+			// Keyframes
+			balls.forEach((el, i, ra) => {
+			  let to = {
+				x: Math.random() * (i % 2 === 0 ? -11 : 11),
+				y: Math.random() * 12
+			  };
+
+			  let anim = el.animate(
+				[
+				  { transform: "translate(0, 0)" },
+				  { transform: `translate(${to.x}rem, ${to.y}rem)` }
+				],
+				{
+				  duration: (Math.random() + 1) * 2000, // random duration
+				  direction: "alternate",
+				  fill: "both",
+				  iterations: Infinity,
+				  easing: "ease-in-out"
+				}
+			  );
+			});
+			});
+
+		$("#goto").click(function() {
+			$(".nav").find('.active').removeClass('active');
+			$("#artu").css("display", "block");
+			$("#artu").addClass("active");
+			$("#home").removeClass("in active");
+			$("#articolex").addClass("in active");
+			//etc
+		});
+
+		</script>
+
+		<script type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                    /* No need to set credentials if already passed in URL */
+                    center: new Microsoft.Maps.Location(22.55186426526284, 113.9730005484314),
+                    zoom: 15
+                });
+                var center = map.getCenter();
+                var infobox = new Microsoft.Maps.Infobox(center, {
+                    maxHeight: 300,
+                    maxWidth: 420,
+                    title: 'Dr. Next 来思博士',
+                    description: '索尼国际教育 KOOV 赋能教室'
+                    // description: '<iframe src="images/https://channel9.msdn.com/Events/Build/2016/B867/player#time=0h15m26s:paused" width="400" height="225" allowFullScreen frameBorder="0"></iframe>'
+                });
+                infobox.setMap(map);
+                
+            }
+        </script>
+        <script type='text/javascript' src='https://cn.bing.com/api/maps/mapcontrol?branch=experimental&setmkt=zh-cn&key=AvlT7qpfjE4a13M-bHvVFdjbZ3nucErlEsdfqp3oFqL5OAHX0sHFlxR74gWBWa1c&callback=loadMapScenario' async defer></script>
+
+	</head>
+	<body style="font-family:'Noto Sans SC', sans-serif; cursive;">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light"  style="background-color: #EDFFEC;">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" height="28" class="d-inline-block align-top">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hackathon 夏令营</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="students_wall.html">学员墙</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="honor_wall.html">赛事成绩和荣誉</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							培养方向
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">创业实战孵化</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">简介</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">问答 Q&A</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+		
+		<section style="margin-top:10px; margin-bottom: 50px;">
+			<div class="row justify-content-center">
+				<h2>赛事成绩 & 各项荣誉</h2>
+			</div>
+			<div class="row justify-content-center">
+				<p class="text-muted">Awards</p>
+			</div>
+			<div class="container bootdey">
+			<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+				<!-- Timeline start -->
+
+				<ul class="list-group list-group-flush">
+			    <li class="list-group-item"> 广东省发明协会 “创新思维与实践大赛” 指定指导机构
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.12.28.</cite></footer>
+			    </li>
+			    <li class="list-group-item"> 广东省发明协会 “少年儿童发明奖” 深圳唯一指定指导机构
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.10.12.</cite></footer>
+			    </li>
+			    <li class="list-group-item">深圳市南山区科技节三等奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.09.10.</cite></footer>
+			    </li>
+			    <li class="list-group-item">深圳市南山区香山里小学430编程课特聘服务机构
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.09.01.</cite></footer>
+			    </li>
+			    <li class="list-group-item">
+			    	深圳首家索尼（索尼国际教育）KOOV 赋能教室
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.06.01.</cite></footer>
+			    </li>
+			    <li class="list-group-item">2021 RoboRave Asia 世界机器人大赛亚洲区金奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.03.24.</cite></footer>
+			    </li>
+			    <li class="list-group-item">深圳市南山区香山里小学校本课Microbit编程课特聘服务机构
+			    	<footer class="blockquote-footer"><cite title="Source Title">2021.03.01.</cite></footer>
+			    </li>
+			    <li class="list-group-item">广东省“青少年创新思维与实践大赛”团队赛高年级组银奖，团队赛低年级组银奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2020.12.20.</cite></footer>
+			    </li>
+			    <li class="list-group-item">广东省“青少年创新思维与实践大赛”团队赛高年级组银奖，团队赛低年级组银奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2020.12.20.</cite></footer>
+			    </li>
+			    <li class="list-group-item">广东省“青少年创新思维与实践大赛”优秀组织，广东省校外机构排名第一
+			    	<footer class="blockquote-footer"><cite title="Source Title">2020.12.20.</cite></footer>
+			    </li>
+			    <li class="list-group-item">深圳市南山区科技节三等奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2020.09.01.</cite></footer>
+			    </li>
+			    <li class="list-group-item">广东省“青少年创新思维与实践大赛”，高年级组团队银奖，低年级组团队铜奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2019.12.20.</cite></footer>
+			    </li>
+			    <li class="list-group-item">深圳市南山区科技界三等奖
+			    	<footer class="blockquote-footer"><cite title="Source Title">2019.09.01.</cite></footer>
+			    </li>
+			    <li class="list-group-item">Dr. Next 来思博士 NO. 1 号店开业
+			    	<footer class="blockquote-footer"><cite title="Source Title">2019.08.24.</cite></footer>
+			    </li>
+				</ul>
+				<!-- Timeline end -->
+			</div>
+			</div>
+			</div>
+		</section>
+		
+
+		
+
+		<section>
+			<div class="bg-info contact4 overflow-hiddedn position-relative">
+				<!-- Row  -->
+				<div class="row no-gutters">
+					<div class="container">
+					  <div class="col-lg-6 contact-box mb-4 mb-md-0">
+						<div class="">
+						  	<h2 class="title text-white mt-2">联系方式:</h2>
+							  	<div class="mt-3">
+									<div class="row">
+									  	<div class="col-lg-12">
+											<p style="color:white">Dr. Next 来思博士 / 索尼国际教育 KOOV 赋能教室</p>
+									  	</div>
+									  	
+									  	<div class="col-lg-12">
+										  	<p style="color:white">深圳市南山区侨北一街富田创意文化园 304</p>
+									  	</div>
+									  	<div class="col-lg-12">
+											<p style="color:white;">Phone: 15O 4495 5693</p>
+									  	</div>
+									</div>
+							  	</div>
+							</div>
+					  	</div>
+					</div>
+					<div class="col-lg-6 right-image p-r-0">
+						<div id="myMap"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer-16371">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-9 text-center">
+						<div class="footer-site-logo mb-4">
+							<a href="#" style="color: #5FDDE5">Dr. Next 来思博士</a>
+						</div>
+						<!-- <ul class="list-unstyled nav-links mb-5">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul> -->
+						<div class="social mb-4">
+							<h3>索尼国际教育 KOOV 赋能教室</h3>
+							<!-- <ul class="list-unstyled">
+								<li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+								<li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="pin"><a href="#"><span class="icon-pinterest"></span></a></li>
+								<li class="dr"><a href="#"><span class="icon-dribbble"></span></a></li>
+							</ul> -->
+						</div>
+						<div class="copyright">
+							<p class="mb-0"><small>&copy; Dr. Next 来思博士. All Rights Reserved.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

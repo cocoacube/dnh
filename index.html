@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dr. Next 来思博士</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_style.css,Mcc.Ax2f9rlEoC.css.pagespeed.cf.xewoUhaX15.css" />
+		<link rel="stylesheet" href='css/homepage.css'/>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript">
+			
+
+			$( document ).ready(function() {
+				console.log( "ready!" );
+				// Some random colors
+			const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+			const numBalls = 50;
+			const balls = [];
+
+			for (let i = 0; i < numBalls; i++) {
+			  let ball = document.createElement("div");
+			  ball.classList.add("ball");
+			  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+			  ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
+			  ball.style.top = `${Math.floor(Math.random() * 90)}vh`;
+			  ball.style.transform = `scale(${Math.random()})`;
+			  ball.style.width = `${Math.random()}em`;
+			  ball.style.height = ball.style.width;
+			  
+			  balls.push(ball);
+			  $('#dots').append( ball );
+			}
+
+			// Keyframes
+			balls.forEach((el, i, ra) => {
+			  let to = {
+				x: Math.random() * (i % 2 === 0 ? -11 : 11),
+				y: Math.random() * 12
+			  };
+
+			  let anim = el.animate(
+				[
+				  { transform: "translate(0, 0)" },
+				  { transform: `translate(${to.x}rem, ${to.y}rem)` }
+				],
+				{
+				  duration: (Math.random() + 1) * 2000, // random duration
+				  direction: "alternate",
+				  fill: "both",
+				  iterations: Infinity,
+				  easing: "ease-in-out"
+				}
+			  );
+			});
+			});
+
+		$("#goto").click(function() {
+			$(".nav").find('.active').removeClass('active');
+			$("#artu").css("display", "block");
+			$("#artu").addClass("active");
+			$("#home").removeClass("in active");
+			$("#articolex").addClass("in active");
+			//etc
+		});
+
+		</script>
+
+		<script type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                    /* No need to set credentials if already passed in URL */
+                    center: new Microsoft.Maps.Location(22.55186426526284, 113.9730005484314),
+                    zoom: 15
+                });
+                var center = map.getCenter();
+                var infobox = new Microsoft.Maps.Infobox(center, {
+                    maxHeight: 300,
+                    maxWidth: 420,
+                    title: 'Dr. Next 来思博士',
+                    description: '索尼国际教育 KOOV 赋能教室'
+                    // description: '<iframe src="images/https://channel9.msdn.com/Events/Build/2016/B867/player#time=0h15m26s:paused" width="400" height="225" allowFullScreen frameBorder="0"></iframe>'
+                });
+                infobox.setMap(map);
+                
+            }
+        </script>
+        <script type='text/javascript' src='https://cn.bing.com/api/maps/mapcontrol?branch=experimental&setmkt=zh-cn&key=AvlT7qpfjE4a13M-bHvVFdjbZ3nucErlEsdfqp3oFqL5OAHX0sHFlxR74gWBWa1c&callback=loadMapScenario' async defer></script>
+
+	</head>
+	<body style="font-family:'Noto Sans SC', sans-serif; cursive;">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light"  style="background-color: #EDFFEC;">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" height="28" class="d-inline-block align-top">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hackathon 夏令营</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="students_wall.html">学员墙</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="honor_wall.html">赛事成绩和荣誉</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							培养方向
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">创业实战孵化</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">简介</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">问答 Q&A</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<div id='header' style="height: 100vh; background-color: #EDFFEC;">
+			<div id='dots' style='text-align: center;'>
+				<div style="padding-top: 20%">
+					<h1 style="font-size: 50px">Dr. Next 来思博士</h1>
+
+					<h3 style="color: darkgray;">编程，让孩子对话未来!</h3>
+					<br>
+					<br>
+					<br>
+					<h3><a href="online_course.html" class="btn btn-warning">在线课程</a></h3>
+
+				</div>
+				
+			</div>
+		</div>
+		
+		<section id="courses" style="align-content: center;background-color: white; padding-top: 60px; padding-bottom: 100px;">
+			<div class="container">
+				<h1>多元的课程体系</h1>
+					<p class="text-muted">
+						涵盖符合不同年龄、不同能力阶段的多元课程
+					</p>
+
+				<h5 style="margin-top: 50px;">Basic</h5>
+				<p class="text-muted">
+					初级启蒙
+				</p>
+				<div class="card-deck">
+					<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="images/koov.jpg" alt="Sony Koov Robot">
+					  <div class="card-body">
+						<h5 class="card-title">KOOV机器人编程启蒙</h5>
+						<p class="card-text">索尼国际教育推出的针对3-12岁孩子的编程启蒙课程，KOOV®是一款可以用模块自由拼搭出各种“造型”，通过“编程”赋予作品各式“动作”，让孩子们动手制作的过程中，培养孩子们的创造力，好奇心，以及开拓未来的思维能力。</p>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="images/microbit.jpg" alt="英国 BBC Microbit 编程主板">
+					  <div class="card-body">
+						<h5 class="card-title">英国 BBC Microbit 编程</h5>
+						<p class="card-text">Microbit 是由英国广播公司BBC推出的一款适用于STEM教育，方便小朋友们学习编程的微型控制板，采用Microbit可以学习到加速度传感器、蓝牙等多种传感器的应用，并且结合微软推出的Makecode编程平台，方便易学，轻松上手。</p>
+						<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+					  </div>
+					</div>
+
+					<div class="card" style="width: 20rem;">
+					  	<img class="card-img-top" src="images/arcade.png">
+					  	<div class="card-body">
+							<h5 class="card-title">Arcade 游戏编程</h5>
+							<p class="card-text">喜欢游戏是孩子的天性，借助孩子对游戏的兴趣，学习开发孩子自己的游戏。使用微软 MakeCode Arcade 编程平台，孩子可以充分的发挥自己的创意，创作出属于自己的掌机游戏！快乐中学习，获得编程技能和思维，展现孩子无限的创造力！</p>
+					  	</div>
+					</div>
+				</div>
+
+				<h5 style="margin-top: 50px;">Advanced</h5>
+				<p class="text-muted">
+					高阶、专业、实战
+				</p>
+				<div class="card-deck">
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/python2.png" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">Python 编程基础</h5>
+							<p class="card-text">学习Python的语法基础，包括Python的数据类型、变量、循环、判断、函数、类等语法知识点。学习常用的数据类型的使用方式。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/pythongame.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">Python 游戏开发</h5>
+							<p class="card-text">Python开发实战，学习Turtle模块，利用Turtle模块学习游戏设计与开发，应用 Python 基础知识，通过逻辑组合完成游戏制作。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/imageprocess.png" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">图像处理</h5>
+							<p class="card-text">图像处理是现代人工智能中非常重要的组成部分。本课程学习通过opencv进行图像的数字处理，实现类似Photoshop和美图秀秀的基础功能。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/facialrecognition.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">人脸识别</h5>
+							<p class="card-text">人脸识别是人工智能最广泛的应用场景，本课程学习人脸识别的基本原理，如何通过Python进行人脸识别应用的开发，学习本地人脸识别和云端人脸识别等不同方式的人脸识别实现方式。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/autodrive.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">自动驾驶</h5>
+							<p class="card-text">自动驾驶是人工智能最重要的应用领域，本课程学习车道线检测，模拟自动驾驶的实现算法。线下课学习制作自动驾驶的人工智能小车。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/interactivegame.jpeg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">AI 互动游戏</h5>
+							<p class="card-text">交互设计是计算机科学中最终要的分支。索尼的Playstation、微软的xbox Kinect、任天堂的Switch，都适用到了人工智能交互，来增加游戏的趣味性。本课程学习制作基础的人工智能交互游戏。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/gui.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">GUI 软件开发</h5>
+							<p class="card-text">GUI全程Graphical User Interface，我们所使用的几乎所有软件都是GUI编程实现的。本章节学习使用Python的GUI开发，制作音乐播放器软件。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/app.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">App 开发</h5>
+							<p class="card-text">本课程从零学习打造一款iOS App。课程将设计UI、UX基础的交互，学习界面设计，App功能实现，Swift编程语言的使用。最终开发出属于自己的iPhone/iPad App。</p>
+						</div>
+					</div>
+
+					<div class="card" style="min-width: 20rem; margin-bottom: 20px;">
+						<img class="card-img-top" src="images/fullstack.jpg" alt="Python">
+						<div class="card-body">
+							<h5 class="card-title">Fullstack 全栈工程师</h5>
+							<p class="card-text">全栈工程师是IT公司中能力非常强的软件工程师，具备独立完成整个产品的开发能力。包含了UI设计、交互设计、前端软件开发、后台服务器开发、业务理解和实现的综合能力。本课程面向以全栈工程师为目标的专业人员。</p>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</section>
+		
+
+		<section id="tutors" class="light" style="background-color:#FFEE93;">
+			<div class="container py-2">
+				<div class="h1 text-center text-dark" id="pageHeaderTitle"> Tutors </div>
+				<p class="text-muted" style="text-align: center;">导师</p>
+
+				<article class="postcard light blue">
+					<a class="postcard__img_link" href="#">
+						<img class="postcard__img" src="images/cube.png" alt="Cube" />
+					</a>
+					<div class="postcard__text t-dark">
+						<h1 class="postcard__title blue"><a href="#">Cube</a></h1>
+						<div class="postcard__subtitle small">
+							<time datetime="2020-05-25 12:00:00">
+								<i class="fas fa-calendar-alt mr-2">创始人 / Principal Mentor</i>
+							</time>
+						</div>
+						<div class="postcard__bar"></div>
+						<div class="postcard__preview-txt">Dr. Next 来思博士创始人，北欧瑞典海归，毕业于瑞典查尔姆斯理工大学计算机科学硕士，曾就职于沃尔沃汽车、微软挪威研发中心。专注于人工智能和移动应用、全栈研发。</div>
+					</div>
+				</article>
+				<article class="postcard light red">
+					<a class="postcard__img_link" href="#">
+						<img class="postcard__img" src="images/jingzheng.JPG" alt="Chong" />	
+					</a>
+					<div class="postcard__text t-dark">
+						<h1 class="postcard__title red"><a href="#">Dr. Chong</a></h1>
+						<div class="postcard__subtitle small">
+							<time datetime="2020-05-25 12:00:00">
+								<i class="fas fa-calendar-alt mr-2">哈尔滨工业大学博士 / Senior Mentor</i>
+							</time>
+						</div>
+						<div class="postcard__bar"></div>
+						<div class="postcard__preview-txt">哈尔滨工业大学硕士、博士，研究生期间在华为实习，后继续攻读信息通信博士学位，精通无人机的编队与路径规划算法。Dr. Next 来思博士资深导师，擅长Python、C++、硬件电路等课程。</div>
+						<ul class="postcard__tagbox">
+							<li class="tag__item"><i class="fas fa-tag mr-2"></i>无人机编队</li>
+							<li class="tag__item"><i class="fas fa-clock mr-2"></i>Python</li>
+							<li class="tag__item play red">
+								<a href="#"><i class="fas fa-play mr-2"></i>电路设计、硬件</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article class="postcard light green">
+					<a class="postcard__img_link" href="#">
+						<img class="postcard__img" src="images/luo.png" alt="Dr. Luo" />
+					</a>
+					<div class="postcard__text t-dark">
+						<h1 class="postcard__title green"><a href="#">Dr. Luo</a></h1>
+						<div class="postcard__subtitle small">
+							<time datetime="2020-05-25 12:00:00">
+								<i class="fas fa-calendar-alt mr-2">新加坡南洋理工大学博士 / Senior Mentor</i>
+							</time>
+						</div>
+						<div class="postcard__bar"></div>
+						<div class="postcard__preview-txt">北京大学计算机人工智能硕士、新加坡南洋理工大学博士，硕士期间获得微软、阿里巴巴双实习生殊荣。硕士毕业后获得华为全奖学金博士生，赴新加坡南洋理工大学攻读人工智能博士学位。Dr. Next 来思博士资深人工智能导师，硕士和博士申请导师。</div>
+						<ul class="postcard__tagbox">
+							<li class="tag__item"><i class="fas fa-tag mr-2"></i>人工智能</li>
+							<li class="tag__item"><i class="fas fa-clock mr-2"></i>机器学习</li>
+							<li class="tag__item play green">
+								<a href="#"><i class="fas fa-play mr-2"></i>Python 课程</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article class="postcard light yellow">
+					<a class="postcard__img_link" href="#">
+						<img class="postcard__img" src="images/afang.JPG" alt="Dr. Yuan"/>
+					</a>
+					<div class="postcard__text t-dark">
+						<h1 class="postcard__title yellow"><a href="#">Dr. Yuan</a></h1>
+						<div class="postcard__subtitle small">
+							<time datetime="2020-05-25 12:00:00">
+								<i class="fas fa-calendar-alt mr-2">哈尔滨工业大学博士 / Senior Mentor</i>
+							</time>
+						</div>
+						<div class="postcard__bar"></div>
+						<div class="postcard__preview-txt">哈尔滨工业大学硕士、博士。研究方向为地球与月球中继通信，擅长通信算法以及航天领域的编程应用。Dr. Next 来思博士 资深 Python 编程导师。</div>
+						<ul class="postcard__tagbox">
+							<li class="tag__item"><i class="fas fa-tag mr-2"></i>Python</li>
+							<li class="tag__item"><i class="fas fa-clock mr-2"></i>航天通信</li>
+							<li class="tag__item play yellow">
+								<a href="#"><i class="fas fa-play mr-2"></i>算法</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article class="postcard light yellow">
+					<a class="postcard__img_link" href="#">
+						<img class="postcard__img" src="images/zhu.JPG" alt="Dr. Yuan"/>
+					</a>
+					<div class="postcard__text t-dark">
+						<h1 class="postcard__title yellow"><a href="#">Zhu L.</a></h1>
+						<div class="postcard__subtitle small">
+							<time datetime="2020-05-25 12:00:00">
+								<i class="fas fa-calendar-alt mr-2">广东省发明协会认证导师 / 资深少儿编程导师</i>
+							</time>
+						</div>
+						<div class="postcard__bar"></div>
+						<div class="postcard__preview-txt">广东省发明协会双认证赛事指导导师，青幼儿编程资深导师。专注有效年龄段编程启蒙与教学指导，赛事指导。RoboRave国际机器人大赛指导导师，索尼国际教育KOOV认证机器人导师。</div>
+						<ul class="postcard__tagbox">
+							<li class="tag__item"><i class="fas fa-tag mr-2"></i>Scratch</li>
+							<li class="tag__item"><i class="fas fa-clock mr-2"></i>广东省发明协会</li>
+							<li class="tag__item play yellow">
+								<a href="#"><i class="fas fa-play mr-2"></i>索尼国际教育KOOV</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id='quotes' style="background-color:white; padding-top:100px; padding-bottom: 100px;">
+			
+			<div class="container">
+				<h2>Why should kids learn programming?</h2>
+				<p class="text-muted">为什么让孩子从小学习编程？</p>
+
+				<div class="row no-gutters" style="margin-bottom: 50px;">
+					<div class="col-md-4">
+    					<img src="images/stevejobs.jpg" style="width:100%">
+    				</div>
+    				<div class="col-md-8">
+						<div class="card" style="height: 100%">	
+						  	<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									
+									<p>
+										“Everybody should learn to program a computer, because it teaches you how to think.”
+									</p>
+									<p style="font-size:12px">
+										“每个人都应该学习如何进行电脑编程，因为它教会你如何思考.”
+									</p>
+									<footer class="blockquote-footer">Steve Jobs <br>
+									<cite> Co-founded Apple</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row no-gutters" style="margin-bottom: 50px;">
+    				<div class="col-md-8">
+						<div class="card" style="height: 100%">	
+						  	<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									
+									<p>
+										“I think it's fair to say that personal computers have become the most empowering tool we've ever created. They're tools of communication, they're tools of creativity, and they can be shaped by their user.”
+									</p>
+									<p style="font-size:12px">
+										“个人电脑已经成为人类创造的功能最强大的工具。它是一个通信工具，也是一个创造型工具。他是一个可以被用户定义的任何东西。”
+									</p>
+									<footer class="blockquote-footer">Bill Gates<br><cite>Co-founder Microsoft</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+    					<img src="images/billgates.png" style="width:100%">
+    				</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row no-gutters" style="margin-bottom: 50px;">
+					<div class="col-md-4">
+    					<img src="images/elonmusk.png" style="width:100%">
+    				</div>
+    				<div class="col-md-8">
+						<div class="card" style="height: 100%">	
+						  	<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									
+									<p>
+										“I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.”
+									</p>
+									<p style="font-size:12px">
+										“我还是个孩子的时候就自学了编程，在10岁的时候买了第一台属于自己的电脑，在12岁的时候卖出了我的第一个软件。”
+									</p>
+									<footer class="blockquote-footer">Elon Musk <br><cite> CEO Tesla & SpaceX</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row no-gutters" style="margin-bottom: 50px;">
+					
+    				<div class="col-md-8">
+						<div class="card" style="height: 100%">	
+						  	<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									
+									<p>
+										“I think every kid in the world should learn to code, whether your passion is in science or the arts, it’s a way to express yourself.”
+									</p>
+									<p style="font-size:12px">
+										“我认为世界上每个孩子都应该学习如何编程，无论你是对科学还是对艺术感兴趣，它都是一个让你表达自己的途径。”
+									</p>
+									<footer class="blockquote-footer">Tim Cook <br><cite>CEO Apple</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+    					<img src="images/timcook.jpg" style="width: 100% ">
+    				</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section>
+			<div class="row justify-content-center">
+				<h2>Milestones</h2>
+			</div>
+			<div class="row justify-content-center">
+				<p class="text-muted">来思博士时间线</p>
+			</div>
+			<div class="container bootdey">
+			<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+			<div class="card">
+			<div class="card-body">
+			<!-- Timeline start -->
+			<div class="timeline">
+				
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2021<small>5月</small>
+					</div>
+					<div class="timeline-dot green-one-bg"></div>
+					<div class="timeline-content green-one">
+						<!-- <i class="fa fa-warning"></i> -->
+						<h4>《RoboRAVE 全球机器人大赛》金奖</h4>
+						<p>
+							《RoboRAVE 全球机器人大赛 Asia》亚洲区冠军（金奖），获得评委RoboRave种子选手称号！
+						</p>
+						<div class="">
+							<span class="badge badge-light">Design</span>
+							<span class="badge badge-light">Admin</span>
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/roborave.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/roboravewinner.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2021年<small>3月</small>
+					</div>
+					<div class="timeline-dot fb-bg"></div>
+					<div class="timeline-content">
+						<h4>香山里小学编程校本课服务</h4>
+						<p>
+							为4-6年级的小学生提供秋季编程校本课，学习Microbit游戏编程。
+						</p>
+						<div class="">
+							<span class="badge badge-light">Microbit</span>
+							<span class="badge badge-light">香山里小学</span>
+							<span class="badge badge-light">编程校本课</span>
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/xiangshanli.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2021年<small>1月</small>
+					</div>
+					<div class="timeline-dot green-two-bg"></div>
+					<div class="timeline-content green-two">
+						<!-- <i class="fa fa-list"></i> -->
+						<h4>2020年度广东省最佳机构</h4>
+						<p>荣获2020年广东省最佳教育机构，机构中排名第一。</p>
+						<div>
+							<span class="badge badge-light">最佳机构</span>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2020年<small>12月</small>
+					</div>
+					<div class="timeline-dot green-three-bg"></div>
+					<div class="timeline-content green-three">
+						<!-- <i class="icon-directions"></i> -->
+						<h4>KOOV创新挑战赛：银奖6枚</h4>
+						<p>
+							2020年《广东省发明协会青少年创新思维与实践挑战赛》（广东省教育局竞赛之一）中获得低年级组银奖3枚，高年级组银奖3枚的好成绩。
+						</p>
+						<div>
+							<span class="badge badge-light">夏涌桉</span>
+							<span class="badge badge-light">李依庭</span>
+							<span class="badge badge-light">田紫珺</span>
+							<span class="badge badge-light">陈达润</span>
+							<span class="badge badge-light">岑源启</span>
+							<span class="badge badge-light">王修齐</span>
+							<span class="badge badge-light">广东省发明协会</span>
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/ccwsilver.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/a6asilver.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/ccw.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/a6a.jpg" class="img-fluid" alt="RoboRave Asia">
+						</div>
+			
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2020年<small>9月</small>
+					</div>
+					<div class="timeline-dot fb-bg"></div>
+					<div class="timeline-content">
+						<h4>受邀香山里小学提供编程校本课</h4>
+						<p>
+							香山里小学邀请 Dr. Next 来思博士 为4-6年级的小学生提供编程校本课，学习Microbit编程主板的编程方法。
+						</p>
+						<div class="">
+							<span class="badge badge-light">Microbit</span>
+							<span class="badge badge-light">香山里小学</span>
+							<span class="badge badge-light">编程校本课</span>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2019年<small>12月</small>
+					</div>
+					<div class="timeline-dot green-four-bg"></div>
+					<div class="timeline-content green-four">
+						<!-- <i class="fa fa-user"></i> -->
+						<h4>KOOV创新挑战赛：银奖，铜奖</h4>
+						<p class="no-margin">
+						2019年《广东省发明协会青少年创新思维与实践挑战赛》（广东省教育局竞赛之一）中获得3银2铜的好成绩。
+						</p>
+						<div>
+							<span class="badge badge-light">左耀宇</span>
+							<span class="badge badge-light">黄世煜</span>
+							<span class="badge badge-light">李东鸿</span>
+							<span class="badge badge-light">夏涌桉</span>
+							<span class="badge badge-light">郝浩然</span>
+							<span class="badge badge-light">《广东省发明协会青少年创新思维与实践挑战赛》</span>
+							<span class="badge badge-light">银奖</span>
+							<span class="badge badge-light">铜奖</span>
+							<span class="badge badge-light">KOOV创新挑战赛</span>
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/IMG_4916.JPG" class="img-fluid" alt="RoboRave Asia">
+						</div>
+						<div style="padding-top: 10px;">
+							<img src="images/IMG_4925.JPG" class="img-fluid" alt="RoboRave Asia">
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2019年<small>9月</small>
+					</div>
+					<div class="timeline-dot teal-bg"></div>
+					<div class="timeline-content teal">
+						<!-- <i class="fa fa-coffee"></i> -->
+						<h4>《深圳市南山区小学生科技节》三等奖</h4>
+						<p class="no-margin">一年级学员使用KOOV制作的《音乐水果树》斩获《21届南山区小学生科技节》三等奖</p>
+						<div>
+							<span class="badge badge-light">三等奖</span>
+							<span class="badge badge-light">《21届南山区小学生科技节》</span>
+							<span class="badge badge-light">《音乐水果树》</span>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						2019年<small>8月</small>
+					</div>
+					<div class="timeline-dot sea-green-bg"></div>
+					<div class="timeline-content sea-green">
+						<!-- <i class="fa fa-image"></i> -->
+						<h4>品牌成立</h4>
+						<p>
+							Dr. Next 来思博士首家校区成立于2019年8月，成为索尼中国官方合作伙伴，提供包含索尼国际教育KOOV机器人课程在内，面向3-18岁的青少儿提供编程启蒙服务。
+						</p>
+						<div>
+							<span class="badge badge-light">索尼官方合作伙伴</span>
+							<span class="badge badge-light">索尼国际教育</span>
+							<span class="badge badge-light">Dr. Next 来思博士品牌成立</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Timeline end -->
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="bg-info contact4 overflow-hiddedn position-relative">
+				<!-- Row  -->
+				<div class="row no-gutters">
+					<div class="container">
+					  <div class="col-lg-6 contact-box mb-4 mb-md-0">
+						<div class="">
+						  	<h2 class="title text-white mt-2">联系方式:</h2>
+							  	<div class="mt-3">
+									<div class="row">
+									  	<div class="col-lg-12">
+											<p style="color:white">Dr. Next 来思博士 / 索尼国际教育 KOOV 赋能教室</p>
+									  	</div>
+									  	
+									  	<div class="col-lg-12">
+										  	<p style="color:white">深圳市南山区侨北一街富田创意文化园 304</p>
+									  	</div>
+									  	<div class="col-lg-12">
+											<p style="color:white;">Phone: 15O 4495 5693</p>
+									  	</div>
+									</div>
+							  	</div>
+							</div>
+					  	</div>
+					</div>
+					<div class="col-lg-6 right-image p-r-0">
+						<div id="myMap"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer-16371">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-9 text-center">
+						<div class="footer-site-logo mb-4">
+							<a href="#" style="color: #5FDDE5">Dr. Next 来思博士</a>
+						</div>
+						<!-- <ul class="list-unstyled nav-links mb-5">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul> -->
+						<div class="social mb-4">
+							<h3>索尼国际教育 KOOV 赋能教室</h3>
+							<!-- <ul class="list-unstyled">
+								<li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+								<li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="pin"><a href="#"><span class="icon-pinterest"></span></a></li>
+								<li class="dr"><a href="#"><span class="icon-dribbble"></span></a></li>
+							</ul> -->
+						</div>
+						<div class="copyright">
+							<p class="mb-0"><small>&copy; Dr. Next 来思博士. All Rights Reserved.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
