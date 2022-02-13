@@ -5,23 +5,24 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href='css/homepage.css'/>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		
+		<link href="css/fontsgoogleapis.css" rel='stylesheet'>
+		<link rel="stylesheet" href="css/fontsgoogleapispoppins.css">
+		<link rel="stylesheet" type="text/css" href="css/serif.css">
 		<link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_style.css,Mcc.Ax2f9rlEoC.css.pagespeed.cf.xewoUhaX15.css" />
 		<link rel="stylesheet" href='css/homepage.css'/>
 		<link rel="stylesheet" type="text/css" href="css/timeline.css">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com"> 
-		<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/zcool.css">
 		
 		<script type="text/javascript">
 			
@@ -96,7 +97,6 @@
                     maxWidth: 420,
                     title: 'Dr. Next 来思博士',
                     description: '索尼国际教育 KOOV 赋能教室'
-                    // description: '<iframe src="images/https://channel9.msdn.com/Events/Build/2016/B867/player#time=0h15m26s:paused" width="400" height="225" allowFullScreen frameBorder="0"></iframe>'
                 });
                 infobox.setMap(map);
                 
@@ -106,27 +106,31 @@
 
 	</head>
 	<body style="font-family:'Noto Sans SC', sans-serif; cursive;">
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light"  style="background-color: #EDFFEC;">
-			<a class="navbar-brand" href="index.html">
+		<nav class="navbar navbar-expand-lg  navbar-light"  style="background-color: #EDFFEC;">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="#">
 				<img src="images/logo.png" height="28" class="d-inline-block align-top">
 			</a>
-
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
 					
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Hackathon 夏令营</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="students_wall.html">小小工程师</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="students_project_exibition.html">学员作品展</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="honor_wall.html">赛事成绩和荣誉</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
-							培养方向
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">创业实战孵化</a>
+						<a class="nav-link" href="#">创业实战孵化案例</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">简介</a>
@@ -136,6 +140,7 @@
 					</li>
 
 				</ul>
+			</div>
 			</div>
 		</nav>
 		
