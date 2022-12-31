@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html onclick="jump()">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dino</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div>
+		<h1 style="color: purple; font-size: 100px;">GameCubes</h1>
+	</div>                   
+	
+	<audio id='bgm' controls autoplay>
+		<source src="sb.mp3" type="audio/mpeg">
+	</audio>
+
+	<div style="display: flex; margin-left: 10px">
+		<img src="diamond.png" width="30px" height="30px">
+		<div id="score" style="font-size: 24px; margin-left: 5px;"></div>
+		<div style="margin-left: 100px;"><button onclick="restart()">Restart</button></div>
+	</div>
+	
+	<div id='game'>
+		
+
+		<div id='ground'><img src="g.jpg" width="200%" height="100px">
+		</div>
+		<div id='character'><img src="marioa.gif"  width="60px" height="60px"></div>
+		<div id='block'><img src="bitcoin.png" width="30px" height="30px"></div>
+		<div id='gameover'></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
