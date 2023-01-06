@@ -1,0 +1,46 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#game{
+	width: 100%;
+	height: 400px;
+	background-image: url('43991.png');
+
+}
+#player{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 140px;
+
+}
+.animate{
+	animation: j 3s;
+}
+#game_title{
+	font-size: 40px;
+	color: rosybrown;
+	margin-left: 40%;
+	margin-top: 10%;
+	padding: 10px;
+
+}
+#√¥{
+	width: 80px;
+	height: 40px;
+	position: relative;
+	top: 180px;
+	left: 1225px;
+	animation: r 5s infinite linear;
+}
+@keyframes r{
+	0%{left: 1225px;}
+	100%{left:-40px}
+}
+@keyframes j{
+	0%{top: 150px;}
+	30%{top: 60px}
+	70%{top: 140px;}
+	100%{top: 150px}
+}
