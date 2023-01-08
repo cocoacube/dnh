@@ -25,7 +25,7 @@ var checkDeak = setInterval(function() {
 		isGameOver = true;
 
 		var gameover = document.getElementById('gameover')
-		gameover.innerHTML = 'Game Over - You DIe'
+		gameover.innerHTML = 'Game Over - You Die'
 	}
 
 	if (!isGameOver) {
