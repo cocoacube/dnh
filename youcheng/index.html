@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html onclick="jump()">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div style="display: flex;">
+		<div id='game_title' style="padding-right: 100px;">Wason 运动会 - 跨栏</div>
+
+		<div id='points' style="padding-right: 100px; display: flex;">
+			<img src="score.png" width="50px" height="60px">
+			<div id="score" style="font-size: 30px; margin: 20px;"></div>
+		</div>
+		<audio id='bgm' controls autoplay loop>
+			<source src="Upbeat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	
+	<div id="game">
+		<div id='background'>
+			<img src="bg.jpeg" height="300px" width="110%">
+		</div>
+		<div id='track'>
+			<img src="track.jpeg" height="230px" width="110%">
+		</div>
+		<div id="player">
+			<img src="runner.gif" widht="80px" height="200px">
+		</div>
+		<div id="block">
+			<img src="obs.png" width="150px" height="150px">
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
